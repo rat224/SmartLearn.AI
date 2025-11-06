@@ -152,6 +152,12 @@ async def translate_text(request: TranslateRequest):
         model_map = {
             ("en", "es"): "translator_en_es",
             ("en", "fr"): "translator_en_fr",
+            ("en", "de"): "translator_en_de",
+            ("en", "it"): "translator_en_it",
+            ("en", "pt"): "translator_en_pt",
+            ("en", "nl"): "translator_en_nl",
+            ("en", "ru"): "translator_en_ru",
+            ("en", "zh"): "translator_en_zh",
         }
         
         lang_pair = (request.source_lang.lower(), request.target_lang.lower())
@@ -159,7 +165,7 @@ async def translate_text(request: TranslateRequest):
         if lang_pair not in model_map:
             raise HTTPException(
                 status_code=400,
-                detail=f"Unsupported language pair. Supported: en->es, en->fr"
+                detail=f"Unsupported language pair. Supported: en->es, en->fr, en->de, en->it, en->pt, en->nl, en->ru, en->zh"
             )
         
         model_key = model_map[lang_pair]
