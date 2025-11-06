@@ -49,7 +49,7 @@ async def load_models():
         models["translator_en_fr"] = pipeline("translation", model="Helsinki-NLP/opus-mt-en-fr")
         models["translator_en_de"] = pipeline("translation", model="Helsinki-NLP/opus-mt-en-de")
         models["translator_en_it"] = pipeline("translation", model="Helsinki-NLP/opus-mt-en-it")
-        models["translator_en_pt"] = pipeline("translation", model="Helsinki-NLP/opus-mt-en-pt")
+        models["translator_en_pt"] = pipeline("translation", model="Helsinki-NLP/opus-mt-en-roa")  # Romance languages
         models["translator_en_nl"] = pipeline("translation", model="Helsinki-NLP/opus-mt-en-nl")
         models["translator_en_ru"] = pipeline("translation", model="Helsinki-NLP/opus-mt-en-ru")
         models["translator_en_zh"] = pipeline("translation", model="Helsinki-NLP/opus-mt-en-zh")
