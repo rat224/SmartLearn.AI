@@ -245,8 +245,14 @@ function App() {
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="es" data-testid="lang-option-es">Spanish</SelectItem>
-                        <SelectItem value="fr" data-testid="lang-option-fr">French</SelectItem>
+                        <SelectItem value="es" data-testid="lang-option-es">🇪🇸 Spanish</SelectItem>
+                        <SelectItem value="fr" data-testid="lang-option-fr">🇫🇷 French</SelectItem>
+                        <SelectItem value="de" data-testid="lang-option-de">🇩🇪 German</SelectItem>
+                        <SelectItem value="it" data-testid="lang-option-it">🇮🇹 Italian</SelectItem>
+                        <SelectItem value="pt" data-testid="lang-option-pt">🇵🇹 Portuguese</SelectItem>
+                        <SelectItem value="nl" data-testid="lang-option-nl">🇳🇱 Dutch</SelectItem>
+                        <SelectItem value="ru" data-testid="lang-option-ru">🇷🇺 Russian</SelectItem>
+                        <SelectItem value="zh" data-testid="lang-option-zh">🇨🇳 Chinese</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
